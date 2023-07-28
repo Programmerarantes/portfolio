@@ -2,18 +2,17 @@
 
 a {
     text-decoration: none;
-    color: white;
 }
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
 }
 section {
-    border: solid black 1px;
+    background-color: white;
 }
 
 .container-one {
-    background-color: black;
+    background-color: #1c1d25;
     height: 100vh;
     color: white;
     font-size: 25px;
@@ -21,18 +20,16 @@ section {
 
 nav {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    height: 15vh;
 }
 ul {
     display: flex;
     width: 500px;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     font-size: 25px;
 }
 li {
+    list-style-type: none;
     width: 200px;
 }
 h1 {
@@ -49,6 +46,10 @@ p {
     font-size: 25px;
     font-weight: 300;
     margin: 0;
+}
+.subtitle {
+    font-size: 15px;
+    font-weight: 300px;
 }
 .logo {
     height: 60px;
@@ -92,34 +93,44 @@ p {
 .container-subsection {
     display: flex;
     align-items: center;
-    justify-content: space-between
-    ;
+    justify-content: space-around;
     padding: 50px;
 }
-@media (max-width: 992px) {
-    .container-subsection {
-        flex-direction: column;
-    }
-    .about-me p {
-        flex-wrap: wrap;
-    }
-
+.container-subsection-two {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
 }
 .about-me h2 {
     margin-bottom: 20px;
 }
-.about-me p{
-    width: 700px;
-    display: flex;
-    text-align: left;
-    justify-content: center;
-    padding-bottom: 20px;
-}
 .perfil {
     width: 250px;
     border-radius: 150px;
+    margin-left: 80px;
+}
+.container-perfil {
+    display: flex;
+    align-items: center;
+}
+.project-board {
+    width: 200px;
+    height: 500px;
+    box-shadow: 5px 5px 10px rgb(110, 136, 149);
+}
+.container-project {
+    display: flex;
+    justify-content: space-around;
+}
+.btn-projects a{
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 footer {
-    height: 500px;
     background-color: black;
+    color: white;
+    text-align: center;
+    padding: 40px;
 }
