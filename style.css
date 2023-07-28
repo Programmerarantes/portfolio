@@ -31,6 +31,7 @@ ul {
 li {
     list-style-type: none;
     width: 200px;
+    color: white;
 }
 h1 {
     font-size: 75px;
@@ -120,10 +121,24 @@ p {
     height: 500px;
     border-radius: 20px;
     box-shadow: 5px 5px 10px rgb(110, 136, 149);
+    margin: 10px;
 }
 .container-project {
     display: flex;
     justify-content: space-around;
+}
+@media only screen and (max-width: 1000px) {
+    .container-project {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 100px;
+    }
+}
+@media only screen and (max-width:620px) {
+    .container-project {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 .btn-projects {
     display: flex;
