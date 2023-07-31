@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c78a90f9e2.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <section class="container-one">
         <nav>
             <img class="logo" src="images/logo1.png" alt="Matheus Arantes's Logo">
-            <ul>
+            <ul id="nav-list">
                 <a href="#about-me">
                     <li>About Me</li>
                 </a>
@@ -21,12 +22,19 @@
                     <li>Contact</li>
                 </a>
             </ul>
+            <button class="hamburguer" id="hamburguer">
+                <i class="fas fa-bars"></i>
+            </button>
         </nav>
         <div class="area-one">
             <div class="title-one">
                 <h1>Matheus Arantes</h1>
                 <p>Front-End Developer</p>
-                <div class="btn-one"><a href="">About Me</a></div>
+                <div class="tecnologies">
+                    <i class="fa-brands fa-html5 fa-2xl"></i>
+                    <i class="fa-brands fa-css3-alt fa-2xl"></i>
+                    <i class="fa-brands fa-square-js fa-2xl"></i>
+                </div>
         </div>
         <div class="socials">
             <a href="https://www.instagram.com/matheus.ayus/" target="_blank" class="media">
@@ -73,7 +81,7 @@
             <div class="project-board">
                 <img class="project-image" src="images/memorygame.png" alt="">
                 <h3>Jogo da Memória</h3>
-                <p class="subtitle">This is my project and some text about it. </p>
+                <p class="subtitle"></p>
                 <hr/>
                 <p class="subtitle">View Here</p>
                 <div class="btn-projects">
@@ -84,7 +92,7 @@
             <div class="project-board">
                 <img class="project-image" src="images/siteyoga.png" alt="">
                 <h3>Site Yoga para Gestantes</h3>
-                <p class="subtitle">This is my project and some text about it. </p>
+                <p class="subtitle"></p>
                 <hr/>
                 <p class="subtitle">View Here</p>
                 <div class="btn-projects">
@@ -95,7 +103,7 @@
             <div class="project-board">
                 <img class="project-image" src="images/todo.png" alt="">
                 <h3>Lista Supermercado</h3>
-                <p class="subtitle">This is my project and some text about it. </p>
+                <p class="subtitle"></p>
                 <hr/>
                 <p class="subtitle">View Here</p>
                 <div class="btn-projects">
@@ -105,7 +113,10 @@
             </div>
         </div>
     </section>
-    <footer id="contact-me"></footer>
+    <footer id="contact-me">
+        <span>Criado por:</span>
+        <a href="https://github.com/Programmerarantes" target="_blank">Programmerarantes</a>
+    </footer>
 
     <script src="script.js"></script>
 </body>
